@@ -2,11 +2,13 @@
 <html lang="en">
 
 <head>
-    <link rel="icon" class="js-site-favicon" type="image/svg+xml" href="https://github.githubassets.com/favicons/favicon.svg">
+   
+    <link rel="icon" class="js-site-favicon" type="image/svg+xml"
+        href="https://github.githubassets.com/favicons/favicon.svg">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfólio | Front</title>
+    <title>RayDev | Portfólio</title>
 
     <link rel="stylesheet" href="style.css">
 </head>
@@ -17,7 +19,7 @@
     </div>
     <div class="navbar">
         <div class="max-width">
-            <div class="logo"><a href="#">Port<span>fólio</span></a></div>
+            <div class="logo"><a href="#">Ray<span>Dev</span></a></div>
             <ul class="menu">
                 <li><a href="#home">Inicio</a></li>
                 <li><a href="#about">Sobre</a></li>
@@ -37,7 +39,7 @@
                 <div class="text-1">Ola, meu nome é</div>
                 <div class="text-2">Rayane Nascimento</div>
                 <div class="text-3">eu sou <span class="typing"></span></div>
-                <a href="https://api.whatsapp.com/send?phone=5521987357641">Contratar-me</a>
+                <a href="#contact">Contratar-me</a>
             </div>
         </div>
     </section>
@@ -73,8 +75,7 @@
             <div class="carousel owl-carousel ">
                 <div class="card">
                     <div class="box">
-                        <a href="#"> <img
-                                src="image/1.jpg" alt=""></a>
+                        <a href="#"> <img src="image/1.jpg" alt=""></a>
 
                         <div class="text">Sistema VB.NET</div>
                         <p>Sistema gerenciador em VisualBasic.Net, Bunifu.</p>
@@ -109,27 +110,49 @@
             <h2 class="title">Contato</h2>
             <div class="contact-content">
                 <div class="column left">
-                    <div class="text">Fale Conosco</div>
+                    <div class="text">Fale comigo</div>
                     <div class="icons">
                         <div class="row">
                             <ion-icon name="person-outline"></ion-icon>
                             <div class="info">
-                                <div class="head">Nome</div>
-                                <div class="sub-title">Rayane Nascimento</div>
+                                <div class="head">Rayane Nascimento</div>
+
                             </div>
                         </div>
                         <div class="row">
                             <ion-icon name="earth-outline"></ion-icon>
                             <div class="info">
-                                <div class="head">Endereço</div>
-                                <div class="sub-title">Rio de Janeiro, RJ</div>
+
+                                <div class="head">Rio de Janeiro, RJ</div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <ion-icon name="mail"></ion-icon>
+                            <div class="info">
+
+                                <a href="http://mailto:rayanenascimento.dev@gmail.com">
+                                    <div class="head"> rayanenascimento.dev@gmail.com</div>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <ion-icon name="logo-whatsapp"></ion-icon>
+                            <div class="info">
+
+                                <div class="head"><a
+                                        href="https://api.whatsapp.com/send?phone=5521987357641">(21)98735-7641</a>
+                                </div>
                             </div>
                         </div>
                         <div class="row">
-                            <ion-icon name="person-outline"></ion-icon>
+                            <ion-icon name="logo-linkedin"></ion-icon>
                             <div class="info">
-                                <div class="head">Email</div>
-                                <div class="sub-title">rayanenascimento.dev@gmail.com</div>
+
+                                <div class="head"><a
+                                        href="https://www.linkedin.com/in/rayane-nascimento-89048a172/">Linkedin</a>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -142,29 +165,27 @@
                         <div class="fields">
                             <div class="field name">
                                 <input type="hidden" name="_captcha" value="false">
-                                <input type="hidden" name="_next" value="http://127.0.0.1:5500/index.html#contact">
-                                <input type="text" name = "Name" placeholder="Nome" required>
+                                <input type="hidden" name="_next" value="http://127.0.0.1:5500/thanks.html#home">
+                                <input type="text" name="Name" placeholder="Nome" required>
                             </div>
                             <div class="field email">
                                 <input type="email" name="email" placeholder="Email" required>
                             </div>
                         </div>
                         <div class="field">
-                            <div class="field">
-                                <input type="text" placeholder="Sobrenome" required>
-                            </div>
                             <div class="field textarea">
-                               <textarea  cols="30" rows="10" name="message" placeholder="Escrever...." required></textarea>
+                                <textarea cols="30" rows="10" name="message" placeholder="Escrever...."
+                                    required></textarea>
                             </div>
                             <div class="button">
-                                <button type="submit">Enviar</button>
+                                <button  type="submit" onclick="funcaolimpa()">Enviar</button>
                             </div>
                         </div>
                     </form>
                 </div>
-                </div>
-
             </div>
+
+        </div>
         </div>
     </section>
 
@@ -176,7 +197,14 @@
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="script.js"></script>
+    <script src="script.js">
+        function funcaolimpa (){
+    document.getElementById('message').value=''
+    document.getElementById('email').value=''
+    document.getElementById('name').value=''
+
+}
+    </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>

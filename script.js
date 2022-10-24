@@ -53,3 +53,10 @@ $(document).ready(function(){
         }
     });
 });
+
+function funcaolimpa (){
+    document.getElementById('message').value=''
+    document.getElementById('email').value=''
+    document.getElementById('name').value=''
+
+}
