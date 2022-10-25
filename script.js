@@ -53,10 +53,9 @@ $(document).ready(function(){
         }
     });
 });
-
-function funcaolimpa (){
-    document.getElementById('message').value=''
-    document.getElementById('email').value=''
-    document.getElementById('name').value=''
-
-}
+function sendMail() {
+    var name = $('#contact #name').val();
+    var email = $('#contact #email').val();
+    var message = $('#contact textarea').val();
+    window.location.href = 'mailto:rayanenascimento.dev@gmail.com?subject=The subject - ' + name + ' (' + email + ')' + '&body=' + message;
+};
