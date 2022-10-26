@@ -183,6 +183,38 @@ section .title::after{
 }
 
 /*  sessão sobre  */
+.about .about-content{
+    align-items: flex-start;
+}
+.about .about-content .left p{
+    text-align: justify;
+}
+.about .about-content .text{
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+.about .about-content .left .icons{
+    margin: 10px 0;
+}
+.about .about-content .row{
+    display: flex;
+    height: 65px;
+    align-items: center;
+}
+.about .about-content .row .info{
+    margin-left: 30px
+}
+.about .about-content .row .info .head{
+    font-weight: 500;
+}
+.about .about-content .row .info .sub-title{
+    color: #333;
+}
+.about .about-content .row ion-icon{
+    font-size: 25px;
+    color: #db0f7f;
+}
 
 .about .title::after{
     content: "Quem sou eu";
@@ -204,7 +236,7 @@ section .title::after{
 .about .about-content .right p{
     text-align: justify;
 }
-.about .about-content .right a{
+.about .about-content .right a.link{
     display: inline-block;
     background: #db0f7f;
     color: #fff;
@@ -522,6 +554,12 @@ footer span a:hover{
 }
 @media (max-width: 1104px){
     .about .about-content .left img{
+        width: 350px;
+        height: 350px;
+    }
+}
+@media (max-width: 1104px){
+    .about .about-content .column-right img{
         width: 350px;
         height: 350px;
     }

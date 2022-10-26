@@ -60,7 +60,7 @@
                         Tenho trabalhado/aprimorado meu conhecimento em tecnologias como Flutter, VisualBasic.NET,
                         MySQL, HTML & CSS, JS,Nest.js, Firebase, Git, Adobe Photoshop, TypeScript, C, C++, C#.
                     </p>
-                    <a href="assets/Curriculo+Rayane.pdf">Download CV</a>
+                    <a id="link" href="assets/Curriculo+Rayane.pdf">Download CV</a>
                 </div>
             </div>
         </div>
@@ -104,13 +104,16 @@
         </div>
     </section>
 
-    <!--Sessão contato-->
-    <section class="contact" id="contact">
+
+    <section class="about" id="about">
         <div class="max-width">
             <h2 class="title">Contato</h2>
-            <div class="contact-content">
+            <div class="about-content">
                 <div class="column left">
-                    
+                  <img src="image/undraw_Exams_re_4ios.png" alt="">
+
+                </div>
+                <div class="column right">
                     <div class="icons">
                         <div class="row">
                             <ion-icon name="person-outline"></ion-icon>
@@ -168,20 +171,14 @@
                             </div>
                         </div>
                     </div>
-
                 </div>
-                <!--column left-->
-                <div class="column right">
-                    <img src="image/final.png" width="600" alt="">
-
-                </div>
-
             </div>
-
         </div>
-
     </section>
 
+
+  
+ 
     <!--sessão  footer-->
     <footer>
         <span> Copyright © 2022 Rayane Nascimento - Todos os direitos reservados</span>
@@ -191,12 +188,7 @@
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="script.js">
-        function sendMail() {
-            var name = $('#contact #name').val();
-            var email = $('#contact #email').val();
-            var message = $('#contact textarea').val();
-            window.location.href = 'mailto:rayanenascimento.dev@gmail.com?subject=The subject - ' + name + ' (' + email + ')' + '&body=' + message;
-        };
+
     </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
